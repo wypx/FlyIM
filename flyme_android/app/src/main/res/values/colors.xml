@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 文件子项的背景色 -->
+    <color name="base_item_pressed">#1a000000</color>
+    <color name="base_item_foucus">#48000000</color>
+    <color name="base_item_normal">#00000000</color>
+
+    <color name="context_menu_normal">#ffffff</color>
+    <color name="context_menu_pressed">#40000000</color>
+
+
+    <!-- ButtomNavigation Test -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="firstColor">#00BCD4</color>
+    <color name="secondColor">#E91E63</color>
+    <color name="thirdColor">#FF5722</color>
+    <color name="fourthColor">#4CAF50</color>
+
+    <!-- Tab Color -->
+    <color name="tabLayout_back">#01bcd4</color>
+
+    <!-- 仿照QQ雷达效果 -->
+    <color name="line_color_blue">#3C8EAE</color>
+    <color name="bg_color_pink">#FF90A2</color>
+    <color name="bg_color_blue">#43D5FF</color>
+    <color name="bg_color_blue_light">#84B5CA</color>
+
+</resources>

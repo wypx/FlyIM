@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">flyme</string>
+
+    <!-- Wifi FTP -->
+    <string name="notif_server_starting">远程管理已开启</string>
+    <string name="no_wifi_hint">没有WLAN网络,请检查WLAN设置</string>
+    <string name="notif_title">远程管理</string>
+    <string name="no_wifi">没有WLAN网络</string>
+    <string name="wifi">文件管理</string>
+    <string name="start_server">开启服务</string>
+    <string name="stop_server">停止服务</string>
+
+    <string name="downloaded">&#160;%s %%</string>
+
+
+    <string name="no_email_app_tip">请先安装邮件应用并设置账户,或直接发送邮件至 1250440341@qq.com</string>
+    <string name="notes_menu_settings">设置</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="right_hand_mode_key">right_hand_mode_key</string>
+    <string name="general_settings">常规设置</string>
+    <string name="other">其它设置</string>
+
+    <string name="right_hand_mode">右手操作模式</string>
+    <string name="right_hand_mode_summary">开启右手操作模式，侧边栏将从右边划开，默认从左边划开</string>
+
+    <string name="give_favor_key">give_favor_key</string>
+    <string name="give_favor">给应用点赞</string>
+
+    <string name="clear_database_key">clear_database_key</string>
+    <string name="clear_database">清空笔记记录</string>
+    <string name="cleal_database_summary">点击此项，将清空所有笔记记录，谨慎使用</string>
+    <string name="note_type_spinner_prompt">选择笔记本：</string>
+    <string name="action_cleanNoteItem">清空当前笔记本</string>
+    <string name="first_init_app_key">first_init_app_key</string>
+    <string name="restore_defaultSettings">还原默认设置</string>
+    <string name="restore_defaultSettings_key">restore_defaultSettings_key</string>
+    <string name="restore_defaultSettings_summary">该应用将回到最初始状态，以此同时所有笔记本记录都会被清空，谨慎使用</string>
+
+    <string name="advice_feedback_key">advice_feedback_key</string>
+    <string name="advice_feedback">意见反馈</string>
+    <string name="search">搜索</string>
+    <string name="action_orderItem">排序方式</string>
+    <string name="action_showItem">查看选项</string>
+    <string name="action_syncItem">同步</string>
+    <string name="title_activity_edit_note">EditNoteActivity</string>
+
+    <string name="sync_note_key">sync_note_key</string>
+    <string name="sync_note">同步笔记</string>
+    <string name="sync_note_summary">同步笔记待实现</string>
+    <string name="show_helpdoc">查看帮助</string>
+    <string name="show_help_key">show_help_key</string>
+    <string name="double_back_exit_hint">再按一次返回键退出应用</string>
+
+    <string name="card_note_item_layout_key">card_note_item_layout_key</string>
+    <string name="card_note_item_layout">卡片式笔记</string>
+    <string name="card_note_item_layout_summary">默认是线性布局</string>
+    <string name="select_show_note_list_item">选择列表查看项</string>
+    <string name="note_list_noteType_item">笔记类型</string>
+    <string name="note_list_createTime_item">创建时间</string>
+    <string name="note_list_lastEditorTime_item">最后编辑时间</string>
+    <string name="not_save_note_leave_tip">笔记已经发生变化，是否保存后再离开</string>
+
+
+    <string name="msg_access_local">打开浏览器 : </string>
+    <string name="msg_wifi_error">Error: Please enable wifi</string>
+    <string name="msg_port_error">Error: 8080 port is in used </string>
+</resources>

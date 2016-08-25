@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <selector xmlns:android="http://schemas.android.com/apk/res/android">
+      
+     <item android:state_pressed="false">
+          <!-- 设置方形 -->
+      <shape android:shape="rectangle" >
+      <!-- 填充的颜色 -->
+      <solid android:color="#3498DB" />
+      <!-- 设置按钮的四个角为弧形 -->
+      <!-- android:radius 角度:弧形的半径 -->
+      <corners android:radius="15dip" />
+      <!-- padding：Button里面的文字与Button边界的间隔 -->
+      <padding 
+          android:bottom="10dp" 
+          android:left="10dp" 
+          android:right="10dp" 
+          android:top="10dp" />
+      <!-- 阶梯的颜色 
+      
+      <gradient 
+          android:centerColor="#cccccc"
+          android:endColor="#cccccc"
+          android:startColor="#cccccc"
+          android:angle="45"
+          />
+          -->
+      
+       </shape>
+   </item>
+   <!-- 按钮按下的状态 -->
+    <item android:state_pressed="true">
+    <shape android:shape="rectangle">
+    <solid android:color="#FFCC99" />
+    <corners android:radius="15dip" />
+  </shape>
+   </item> 
+ </selector> 

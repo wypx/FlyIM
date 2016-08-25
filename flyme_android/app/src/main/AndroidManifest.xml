@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="me.smart.flyme"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--权限管理 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <!-- 授予程序使用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="me.smart.flyme.myapp.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".appintro.AppintroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.main.MainActivity"></activity>
+        <activity android:name=".activity.wifi.WiFiActivity"></activity>
+        <activity android:name=".activity.phone.MediaActivity"></activity>
+        <activity android:name=".activity.phone.DocActivity"></activity>
+        <activity android:name=".activity.download.DownActivity"></activity>
+        <activity android:name=".activity.phone.PhoneStorageActivity"></activity>
+        <activity android:name=".activity.systerm.RemoteControlActivity"></activity>
+        <activity android:name=".activity.video.VideoPreviewActivitiy"></activity>
+        <activity android:name=".activity.computer.DevSearchActivity"></activity>
+        <activity android:name=".activity.setting.SettingActivity"></activity>
+        <activity android:name=".activity.video.libstreamActivty"></activity>
+
+
+        <receiver android:name="me.smart.mylibrary.utils.WifiAp.WTBroadcast">
+                <intent-filter>
+                    <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                    <action android:name="android.net.wifi.SCAN_RESULTS" />
+                    <action android:name="android.net.wifi.STATE_CHANGE" />
+                </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

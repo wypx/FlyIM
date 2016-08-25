@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#4185F1" 
+    android:layout_width="wrap_content" 
+    android:layout_height="match_parent"
+  >
+    <me.smart.flyme.view.wiget.TitleCustomBarView
+        android:id="@+id/toolbar_ppt"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatTextView
+		android:textSize="20.0sp" 
+        android:textColor="#ffffff" 
+        android:id="@+id/sendMSG" 
+        android:layout_width="wrap_content" 
+        android:layout_height="90.0dip" 
+        android:layout_marginTop="90.0dip" 
+        android:text="-----请确认已打开PPT-----\n" 
+        android:layout_centerHorizontal="true" />
+    <LinearLayout 
+        android:orientation="horizontal" 
+        android:id="@+id/Linear1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="55.0dip" 
+        android:layout_alignTop="@id/sendMSG" 
+        android:layout_alignParentLeft="true">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/back" 
+            android:background="@mipmap/ppt_forwad"
+            android:layout_width="85dp" 
+            android:layout_height="85dp" 
+            android:layout_marginLeft="30.0dip" 
+            android:layout_weight="1.0" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/froward" 
+            android:background="@mipmap/ppt_next"
+            android:layout_width="85dp" 
+            android:layout_height="85dp" 
+            android:layout_marginLeft="115.0dip" 
+            android:layout_weight="1.0" />
+    </LinearLayout>
+ 
+    
+    <android.support.v7.widget.AppCompatButton
+        android:textColor="#ffffffff" 
+        android:id="@+id/start_from_page1" 
+        android:background="@mipmap/ppt_play"
+        android:layout_width="85dp" 
+        android:layout_height="85dp" 
+        android:layout_marginTop="30.0dip" 
+        android:layout_below="@id/Linear1" 
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/Linear2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/start_from_page1"
+        android:layout_marginTop="31dp"
+        android:orientation="horizontal" >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/escape"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="30dip"
+            android:background="@mipmap/ppt_exit" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/start_now_page"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="115.0dip"
+            android:background="@mipmap/ppt_pause" />
+    </LinearLayout>
+
+</RelativeLayout>

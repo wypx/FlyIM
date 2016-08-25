@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <me.smart.flyme.view.wiget.TitleCustomBarView
+        android:id="@+id/toolbar_base_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <me.smart.flyme.view.fab.FABToolbarLayout
+        android:id="@+id/fabtoolbar_base"
+        android:layout_below="@id/toolbar_base_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:showDuration="600"
+        app:hideDuration="200"
+        app:rightMargin="30dp"
+        app:bottomMargin="30dp"
+        app:fadeInFraction="0.2">
+
+        <me.smart.flyme.view.recyclerview.AutoLoadRecyclerView
+            android:id="@+id/recyclerview_base_file"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <me.smart.flyme.view.fab.FABContainer
+            android:id="@+id/fabtoolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabtoolbar_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#4185F1"
+                app:rippleColor="#7311cc2a"
+                app:fabSize="normal"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp"
+                android:src="@mipmap/ic_sync_white_48dp"/>
+
+        </me.smart.flyme.view.fab.FABContainer>
+
+        <LinearLayout
+            android:id="@+id/fabtoolbar_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_base_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"/>
+
+            <ImageView
+                android:id="@+id/img_base_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/abc_ic_menu_paste_mtrl_am_alpha"/>
+
+            <ImageView
+                android:id="@+id/img_base_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/abc_ic_menu_selectall_mtrl_alpha"/>
+
+            <ImageView
+                android:id="@+id/img_base_four"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/abc_ic_menu_cut_mtrl_alpha"/>
+
+        </LinearLayout>
+
+    </me.smart.flyme.view.fab.FABToolbarLayout>
+
+</RelativeLayout>

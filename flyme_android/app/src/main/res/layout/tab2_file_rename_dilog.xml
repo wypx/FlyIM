@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    TextInputLayout是继承自LinearLayout容器布局，因此我们需要将EditView包含在TextInputLayout
+    之内才可以使用，言外之意：TextInputLayout不能单独使用.
+    效果: hint 中的文本就会变成 floating lable 浮动在 EditText 上方
+-->
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/textrnInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginBottom="10.0dip" />
+    </android.support.design.widget.TextInputLayout>
+

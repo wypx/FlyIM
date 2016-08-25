@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <me.smart.flyme.view.wiget.TitleCustomBarView
+        android:id="@+id/toorbar_sd_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <me.smart.flyme.view.wiget.WheelIndicatorView
+        android:id="@+id/wheel_indicator_view"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/toorbar_sd_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        app:backgroundColor2="@android:color/white"
+        app:filledPercent="40"
+        app:itemsLineWidth="13dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/wheel_indicator_view"
+        android:layout_marginTop="59dp"
+        android:background="#ffffffff"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@mipmap/ic_color_blue"
+                android:text="音乐: 8.8 G" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@mipmap/ic_color_yellow"
+                android:text="视频: 425 M" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@mipmap/ic_color_red"
+                android:text="主题: 0 G" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@mipmap/ic_color_lightgreen"
+                android:text="文档: 31.8 M" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@mipmap/ic_color_orange"
+                android:text="压缩: 21.9 M" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@mipmap/ic_color_gray"
+                android:text="其他: 425 M" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@mipmap/ic_color_green"
+                android:text="图片: 640 M" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@mipmap/ic_color_purple"
+                android:text="安装: 462 M" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

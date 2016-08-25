@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- 主题 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--导航栏底色-->
+        <item name="colorPrimary">#4285F4</item>
+        <!--状态栏底色-->
+        <item name="colorPrimaryDark">#303F9F</item>
+        <!--导航栏上的标题颜色-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!--按钮选中或者点击获得焦点后的颜色-->
+        <item name="colorAccent">#FFAB40</item>
+        <!--和 colorAccent相反，正常状态下按钮的颜色-->
+        <!--控制FloatingActionButton的大小，背景颜色，阴影的深度等-->
+        <item name="colorControlNormal">#ffffff</item>
+        <!--Button按钮正常状态颜色-->
+        <item name="colorButtonNormal">@color/accent_material_light</item>
+        <!--EditText 输入框中字体的颜色-->
+        <item name="editTextColor">@color/abc_search_url_text</item>
+        <!--Activity窗口的颜色-->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+    </style>
+    <!-- ToolBar的主题 -->
+    <style name="ThemeOverlay.AppCompat.Dark.ActionBar" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="ThemeOverlay.AppCompat.Light" parent="Base.ThemeOverlay.AppCompat.Light"/>
+
+    <!--TabLayout 修改字体的方法 -->
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--ActionBar右菜单菜单弹出样式 -->
+    <style name="MenuTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!-- TitleBar按钮点击效果 -->
+    <style name="TitleBar.ImageStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!-- TitleBar弹出菜单 -->
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/title_bar_pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/title_bar_pop_out</item>
+    </style>
+    <!-- 铡刀菜单 -->
+    <style name="ImageView.Hamburger" parent="Widget.AppCompat.ActionButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
+
+    <!-- 数字进度条的样式 -->
+    <style name="NumberProgressBar_Warning_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#E74C3C</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#E74C3C</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+    <style name="ContextMenuButton">
+        <item name="android:layout_width">170dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_context_menu</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- app:tabIndicatorColor="?attr/android:textColorPrimary" -->
+    <style name="TablayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/android:textColorPrimary</item>
+        <item name="tabSelectedTextColor">@android:color/black</item>
+        <item name="tabTextColor">#757575</item>
+        <item name="tabBackground">@color/tabLayout_back</item>
+    </style>
+
+    <style name="myDialogAnim" parent="android:Animation">
+
+        <!-- 进入时的动画 -->
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <!-- 退出时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+</resources>

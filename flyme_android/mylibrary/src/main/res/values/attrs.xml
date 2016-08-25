@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BottomNavigationView">
+        <!-- If text will be enabled for the tabs, defaulted to true -->
+        <attr name="bnv_with_text" format="boolean" />
+        <!-- If there will be a shadow on the view, default is true -->
+        <attr name="bnv_shadow" format="boolean" />
+        <!-- If the view should be set up for a tablet, default is false -->
+        <attr name="bnv_tablet" format="boolean" />
+        <!-- Disable or enable the background color, default is true -->
+        <attr name="bnv_colored_background" format="boolean" />
+        <!-- If a supplied ViewPager will have a slide animation, default is true -->
+        <attr name="bnv_viewpager_slide" format="boolean" />
+        <!-- Text size for the active tab, default size is 14sp -->
+        <attr name="bnv_active_text_size" format="dimension" />
+        <!-- Text size for an inactive tab, default size is 12sp -->
+        <attr name="bnv_inactive_text_size" format="dimension" />
+        <!-- The color of an activated tab. Will only be considered if bnv_colored_background is false, no default is set -->
+        <attr name="bnv_active_color" format="color" />
+    </declare-styleable>
+
+    <!-- SpinKitViewStyle加载动画 -->
+    <attr name="SpinKitViewStyle" format="reference" />
+    <declare-styleable name="SpinKitView">
+        <attr name="SpinKit_Style">
+            <enum name="RotatingPlane" value="0" />
+            <enum name="DoubleBounce" value="1" />
+            <enum name="Wave" value="2" />
+            <enum name="WanderingCubes" value="3" />
+            <enum name="Pulse" value="4" />
+            <enum name="ChasingDots" value="5" />
+            <enum name="ThreeBounce" value="6" />
+            <enum name="Circle" value="7" />
+            <enum name="CubeGrid" value="8" />
+            <enum name="FadingCircle" value="9" />
+            <enum name="FoldingCube" value="10" />
+            <enum name="RotatingCircle" value="11" />
+            <enum name="MultiplePulse" value="12" />
+            <enum name="PulseRing" value="13" />
+            <enum name="MultiplePulseRing" value="14" />
+        </attr>
+        <attr name="SpinKit_Color" format="color" />
+    </declare-styleable>
+
+    <!-- MaterialPreference 设置界面 -->
+    <attr name="mp_colorAccent" format="reference|color"/>
+
+    <!-- AVLoadingIndicatorView加载动画 -->
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="BallPulse" value="0"/>
+            <flag name="BallGridPulse" value="1"/>
+            <flag name="BallClipRotate" value="2"/>
+            <flag name="BallClipRotatePulse" value="3"/>
+            <flag name="SquareSpin" value="4"/>
+            <flag name="BallClipRotateMultiple" value="5"/>
+            <flag name="BallPulseRise" value="6"/>
+            <flag name="BallRotate" value="7"/>
+            <flag name="CubeTransition" value="8"/>
+            <flag name="BallZigZag" value="9"/>
+            <flag name="BallZigZagDeflect" value="10"/>
+            <flag name="BallTrianglePath" value="11"/>
+            <flag name="BallScale" value="12"/>
+            <flag name="LineScale" value="13"/>
+            <flag name="LineScaleParty" value="14"/>
+            <flag name="BallScaleMultiple" value="15"/>
+            <flag name="BallPulseSync" value="16"/>
+            <flag name="BallBeat" value="17"/>
+            <flag name="LineScalePulseOut" value="18"/>
+            <flag name="LineScalePulseOutRapid" value="19"/>
+            <flag name="BallScaleRipple" value="20"/>
+            <flag name="BallScaleRippleMultiple" value="21"/>
+            <flag name="BallSpinFadeLoader" value="22"/>
+            <flag name="LineSpinFadeLoader" value="23"/>
+            <flag name="TriangleSkewSpin" value="24"/>
+            <flag name="Pacman" value="25"/>
+            <flag name="BallGridBeat" value="26"/>
+            <flag name="SemiCircleSpin" value="27"/>
+        </attr>
+        <attr name="indicator_color" format="color"/>
+    </declare-styleable>
+
+    <!-- ActivityAnimationTool的效果 -->
+    <declare-styleable name="FoldingMenu">
+        <attr name="foldNumber" format="integer" />
+    </declare-styleable>
+
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:background="#fffdfd"
+        android:layout_width="fill_parent" 
+        android:layout_height="0.0px" 
+        android:layout_marginTop="2.0dip" 
+        android:layout_weight="1.0">
+
+        <TextView
+            android:id="@+id/filepath"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="文件路径"
+            android:visibility="visible" />
+
+        <me.smart.flyme.view.recyclerview.AutoLoadRecyclerView
+            android:id="@+id/show_sdcard" 
+            android:fadingEdge="none" 
+            android:layout_marginLeft="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#ffdadbda" 
+            android:dividerHeight="1.0px" />
+    </LinearLayout>
+    <LinearLayout 
+        android:gravity="center_vertical" 
+        android:orientation="horizontal" 
+        android:id="@+id/copyfile" 
+        android:background="#ffffffff" 
+        android:visibility="gone" 
+        android:layout_width="wrap_content" 
+        android:layout_height="45.0dip" 
+        android:layout_marginLeft="85.0dip" 
+        android:layout_marginBottom="4.0dip">
+        <Button 
+            android:textSize="16.0sp" 
+            android:textColor="#fffdfefe" 
+            android:id="@+id/btn_paste" 
+            android:background="@drawable/btn_paste_pressed_style" 
+            android:layout_width="0.0px" 
+            android:layout_height="fill_parent" 
+            android:text="粘贴" 
+            android:layout_weight="1.0" />
+        <View 
+            android:background="#ffffffff" 
+            android:layout_width="10.0dip" 
+            android:layout_height="fill_parent" />
+        <Button 
+            android:textSize="16.0sp" 
+            android:textColor="#fffdfefe" 
+            android:id="@+id/btn_paste_cancel" 
+            android:background="@drawable/btn_cancel_pressed_style" 
+            android:layout_width="0.0px" 
+            android:layout_height="fill_parent" 
+            android:text="取消" 
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout 
+        android:gravity="center_vertical" 
+        android:orientation="horizontal" 
+        android:id="@+id/movefile" 
+        android:background="#ff0ba683" 
+        android:visibility="gone" 
+        android:layout_width="wrap_content" 
+        android:layout_height="45.0dip" 
+        android:layout_marginLeft="75.0dip" 
+        android:layout_marginBottom="4.0dip">
+        <Button 
+            android:textSize="16.0sp" 
+            android:textColor="#fffdfefe" 
+            android:id="@+id/btn_move" 
+            android:background="#ff3498db" 
+            android:layout_width="0.0px" 
+            android:layout_height="fill_parent" 
+            android:text="移动" 
+            android:layout_weight="1.0" />
+        <View 
+            android:background="#ffdadbda" 
+            android:layout_width="10.0dip" 
+            android:layout_height="fill_parent" />
+        <Button 
+            android:textSize="16.0sp" 
+            android:textColor="#fffdfefe" 
+            android:id="@+id/btn_move_cancel" 
+            android:background="#ffeb7b59" 
+            android:layout_width="0.0px" 
+            android:layout_height="fill_parent" 
+            android:text="取消" 
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FABToolbarLayout">
+        <attr name="showDuration" format="integer"/>
+        <attr name="hideDuration" format="integer"/>
+        <attr name="bottomMargin" format="dimension"/>
+        <attr name="rightMargin" format="dimension"/>
+        <attr name="fadeInPivotX" format="dimension"/>
+        <attr name="fadeInPivotY" format="dimension"/>
+        <attr name="fadeInFraction" format="float"/>
+    </declare-styleable>
+
+    <!--SwitchButton -->
+    <declare-styleable name="SwitchButton">
+        <attr name="borderWidth2" format="dimension"/>
+        <attr name="offBorderColor" format="reference|color"/>
+        <attr name="offColor" format="reference|color"/>
+        <attr name="onColor" format="reference|color"/>
+        <attr name="spotColor" format="reference|color"/>
+        <attr name="animate" format="reference|boolean"/>
+    </declare-styleable>
+
+    <!--
+        布局里面自定义控件的必须写的属性
+        declare-styleable是给自定义控件添加自定义属性用的
+        reference指的是是从string.xml引用过来
+        dimension 指的是是从dimension.xml里引用过来的内容.注意,这里如果是dp那就会做像素转换
+    -->
+    <!-- 圆形Button等可自定义属性的按钮 -->
+    <declare-styleable name="FlatButton">
+        <attr name="button_normalbgcolor" format="dimension|reference|color" />
+        <attr name="button_pressedbgcolor" format="color|reference" />
+        <attr name="button_radius" format="dimension|reference" />
+        <attr name="button_textColor" format="reference|string|dimension" />
+        <attr name="button_textSize" format="dimension|reference" />
+        <attr name="button_text" format="string|reference" />
+    </declare-styleable>
+    <!-- 仿IOS 分段控件 Segement Control -->
+    <declare-styleable name="FlatTabGroup">
+        <attr name="tab_items" format="reference" />
+        <attr name="tab_contents" format="string" />
+        <attr name="tab_border_width" format="dimension|reference" />
+        <attr name="tab_border_color" format="color|reference" />
+        <attr name="tab_radius" format="dimension|reference" />
+        <attr name="tab_textColor" format="reference" />
+        <attr name="tab_textSize" format="dimension|reference" />
+    </declare-styleable>
+
+    <!-- 数字进度条加载 -->
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+        <attr name="progress_text_offset" format="dimension"/>
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+
+    <!-- 圆圈百分比 -->
+    <declare-styleable name="WheelIndicatorView">
+        <attr name="itemsLineWidth" format="dimension" />
+        <attr name="filledPercent" format="integer" />
+        <attr name="backgroundColor2" format="color" />
+    </declare-styleable>
+
+
+
+</resources>
+   
+     

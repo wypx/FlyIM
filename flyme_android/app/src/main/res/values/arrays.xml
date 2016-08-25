@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="arrayM3">
+        <item>上传</item>
+        <item>重命名</item>
+        <item>删除</item>
+        <item>复制</item>
+        <item>移动</item>
+        <item>属性</item>
+    </string-array>
+    <string-array name="arrayM1">
+        <item>下载</item>
+        <item>删除</item>
+        <item>属性</item>
+        <item>复制</item>
+        <item>移动</item>
+        <item>重命名</item>
+    </string-array>
+    <string-array name="mkdir">
+        <item>新建文件夹</item>
+        <item>新建文件</item>
+    </string-array>
+
+    <string-array name="tab_titles">
+        <item>垂直List</item>
+        <item>水平List</item>
+        <item>垂直Grid</item>
+        <item>水平Grid</item>
+        <item>瀑布Staggered</item>
+    </string-array>
+
+    </resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    CardView就是一个卡片样式的FrameLayout。
+
+    参数介绍：
+        app:cardBackgroundColor  :   	背景颜色
+        app:cardCornerRadius    ：   	设置圆角。
+        app:cardElevation       ：    	阴影的大小
+        app:cardMaxElevation    ：      阴影最大高度
+        contentPadding         ：      卡片内容于边距的间隔
+        app:cardPreventCornerOverlap  ：在v20和之前的版本中添加内边距，
+                                    	这个属性是为了防止卡片内容和边角的重叠。
+
+       app:cardUseCompatPadding  ：    设置内边距，v21+的版本和之前的版本仍旧具有一样的计算方式
+-->
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_list_item"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/white"
+    android:background="@drawable/selector_card"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="10dp"
+    app:contentPadding="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/base_item_file_image"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_folder_gray_48dp"
+        android:layout_marginLeft="5dp"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/base_item_file_title"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:text="桃谷エリカ.avi"
+        android:textColor="#a19090"
+        android:textSize="15sp"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/base_item_file_subtitle"
+        android:visibility="visible"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.5 G  2015-12-11"
+        android:textColor="#a19090"
+        android:textSize="12sp"/>
+
+</android.support.v7.widget.CardView>

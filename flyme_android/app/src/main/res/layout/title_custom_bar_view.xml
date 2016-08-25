@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/title_background"
+    android:background="#3F51B5"
+    android:layout_height="52dp" >
+
+    <me.smart.flyme.view.wiget.CustomTextView
+        android:id="@+id/title_tv_centertltle"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="美女"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:contentDescription="子菜单"
+        android:id="@+id/title_img_sub2"
+        style="@style/TitleBar.ImageStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/title_img_more"
+        android:layout_alignEnd="@+id/title_img_more" 
+        android:layout_alignTop="@+id/title_img_more"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:src="@mipmap/ic_sd_card_white_24dp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:contentDescription="子菜单"
+        android:id="@+id/title_img_sub1"
+        style="@style/TitleBar.ImageStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/title_img_sub2"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/title_img_more"
+        android:src="@drawable/abc_ic_menu_cut_mtrl_alpha" />
+
+    <ImageView
+        android:contentDescription="返回"
+        android:id="@+id/title_img_back"
+        style="@style/TitleBar.ImageStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/title_img_sub1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+    <ImageView
+        android:contentDescription="菜单"
+        android:id="@+id/title_img_more"
+        style="@style/TitleBar.ImageStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha" />
+
+</RelativeLayout>
+
+				<!--
+					abc_ic_clear_mtrl_alpha  X清除
+					abc_ic_search_api_mtrl_alpha 搜索
+					abc_ic_voice_search_api_mtrl_alpha 语音
+					abc_ic_menu_copy_mtrl_am_alpha 复制
+					abc_ic_menu_share_mtrl_alpha  分享
+				 -->

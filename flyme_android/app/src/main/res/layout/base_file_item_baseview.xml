@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview_list_item"
+    android:background="@drawable/bg_clickable"
+   android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/base_item_file_image"
+        android:layout_gravity="center_vertical"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@mipmap/ic_folder_gray_48dp"
+        android:layout_marginLeft="5dp"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/base_item_file_title"
+        android:singleLine="true"
+        android:ellipsize="end"
+       android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:text="桃谷エリカ.avi"
+        android:textColor="#a19090"
+        android:textSize="15sp"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/base_item_file_subtitle"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.5 G  2015-12-11"
+        android:textColor="#a19090"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

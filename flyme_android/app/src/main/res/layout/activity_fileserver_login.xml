@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+    
+   
+    <LinearLayout
+        android:id="@+id/loginout_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+   	<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <me.smart.flyme.view.wiget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:text=" 地 址  :  "
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:hint="server ip"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <me.smart.flyme.view.wiget.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:text=" 端 口  :  "
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:hint="server port"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton 
+                android:id="@+id/bt_save_user_pass"         
+                android:layout_width="wrap_content"
+                android:layout_height="37sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:button="@mipmap/ui_loginout_radio"
+                android:text="     保存服务器信息 ?"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#D1D1D1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/filesever_login"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/loginout_cancel_btn_select"
+                android:textSize="18sp"
+                android:text="登陆" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#D1D1D1" />
+
+            <Button
+                android:id="@+id/filesever_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/loginout_confirm_btn_select"
+                android:textSize="18sp"             
+                android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

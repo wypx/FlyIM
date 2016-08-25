@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+    <me.smart.flyme.view.wiget.TitleCustomBarView
+        android:id="@+id/toolbar_cmd"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/cmd_msg" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginRight="5.0dip" 
+        android:layout_marginBottom="5.0dip" />
+    <LinearLayout 
+        android:orientation="horizontal" 
+        android:id="@+id/Linear_cmd" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="16.0dip" 
+        android:layout_below="@id/toolbar_cmd"
+        android:layout_alignParentLeft="true">
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/cmd"  
+            android:layout_width="237.0dip" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10.0dip" 
+            android:layout_marginStart="10.0dip"
+            android:layout_marginRight="2.0dip" 
+            android:layout_marginEnd="2.0dip"
+            android:hint="输入cmd命令？"
+            android:ems="10">
+            <requestFocus />
+        </android.support.v7.widget.AppCompatAutoCompleteTextView>
+        <android.support.v7.widget.AppCompatButton 
+            android:id="@+id/execute_cmd" 
+            android:layout_width="wrap_content" 
+            android:layout_height="43.0dip" 
+            android:layout_marginLeft="10.0dip" 
+            android:background="#4185F1"
+            android:text="执行" />
+    </LinearLayout>
+</RelativeLayout>

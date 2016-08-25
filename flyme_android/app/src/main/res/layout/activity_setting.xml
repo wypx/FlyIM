@@ -1,0 +1,29 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.setting.SettingActivity">
+
+    <!--
+     BallPulse  BallGridPulse  BallClipRotate  BallClipRotatePulse
+     SquareSpin BallClipRotateMultiple  BallPulseRise BallRotate
+     CubeTransition  BallZigZag  BallZigZagDeflect BallTrianglePath
+     BallScale LineScale  LineScaleParty BallScaleMultiple
+
+     -->
+    <me.smart.mylibrary.AVLoading.AVLoadingIndicatorView
+        android:id="@+id/AVLoading_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:indicator="LineScale"
+        />
+    <FrameLayout
+        android:id="@+id/setting_fragment"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

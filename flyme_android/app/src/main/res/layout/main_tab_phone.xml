@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@android:color/white"
+	android:fitsSystemWindows="true"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<me.smart.mylibrary.livingtabs.LivingTabsLayout
+		android:id="@+id/living_tabs"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		style="@style/TablayoutStyle"
+		app:tabTextAppearance="@style/TabLayoutTextAppearance"/>
+ 	<FrameLayout
+ 	    android:id="@+id/tab2_fl_main"
+ 	    android:layout_marginTop="15dp"
+ 	    android:layout_below="@id/living_tabs"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <LinearLayout 
+        android:gravity="center_vertical|center_horizontal" 
+        android:id="@+id/layout_loading" 
+        android:visibility="visible" 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent">
+		<!--
+			@style/SpinKitView
+			@style/SpinKitView.Circle
+			@style/SpinKitView.Large
+			@style/SpinKitView.Small
+			@style/SpinKitView.Small.DoubleBounce
+
+			ProgressBar
+
+			ProgressBar progressBar = (ProgressBar)findViewById(R.id.progress);
+			DoubleBounce doubleBounce = new DoubleBounce();
+			progressBar.setIndeterminateDrawable(doubleBounce);
+		-->
+        <me.smart.mylibrary.spinkit.SpinKitView
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/spin_kit"
+			style="@style/SpinKitView.Large.Wave"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			app:SpinKit_Color="@color/colorAccent"/>
+    </LinearLayout>
+</RelativeLayout>

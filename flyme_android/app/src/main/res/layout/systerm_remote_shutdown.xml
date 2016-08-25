@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/popwindow_layout" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:background="#4185F1" >
+    <me.smart.flyme.view.wiget.TitleCustomBarView
+        android:id="@+id/toolbar_shut"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" />
+    <ImageView 
+        android:id="@+id/icon_shutdown" 
+        android:layout_width="100.0dip" 
+        android:layout_height="100.0dip" 
+        android:layout_marginLeft="130.0dip" 
+        android:layout_marginTop="100.0dip" 
+        android:src="@mipmap/icon_power" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:textSize="25.0sp" 
+        android:textColor="@android:color/white" 
+        android:gravity="center" 
+        android:id="@+id/textView1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="53.0dip" 
+        android:text="请妥善保存文件哦" 
+        android:layout_below="@id/icon_shutdown" 
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

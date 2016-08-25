@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fffdfd"
+    android:paddingLeft="10.0dip" 
+    android:paddingTop="10.0dip" 
+    android:paddingRight="10.0dip" 
+    android:paddingBottom="10.0dip" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  >
+    <TextView 
+        android:textColor="#ffaaaaaa" 
+        android:id="@+id/tvMsg" 
+        android:focusable="false" 
+        android:focusableInTouchMode="false" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:hint="信息:" 
+        android:layout_alignParentTop="true" />
+    <android.support.v7.widget.AppCompatEditText  
+        android:id="@+id/txtIP" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="5.0dip" 
+        android:hint="192.168.1.2" 
+        android:ems="10" 
+        android:layout_below="@id/tvMsg" 
+        android:layout_centerVertical="true" 
+        android:contentDescription="目标IP地址" />
+    <android.support.v7.widget.AppCompatEditText  
+        android:id="@+id/txtPort" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="15.0dip" 
+        android:hint="9999" android:ems="10" 
+        android:layout_below="@id/txtIP" 
+        android:layout_alignLeft="@id/txtIP" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et"
+        android:layout_width="fill_parent"
+        android:layout_height="180.0dip"
+        android:layout_alignLeft="@id/txtIP"
+        android:layout_alignRight="@+id/btnSend"
+        android:layout_below="@id/txtPort"
+        android:layout_marginTop="15.0dip"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="top|left|center"
+        android:inputType="textMultiLine"
+        android:longClickable="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:textSize="15.0sp" >
+
+        <requestFocus />
+    </android.support.v7.widget.AppCompatEditText>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_below="@id/et"
+        android:background="@drawable/base_button_style"
+        android:id="@+id/btnSend"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="选择文件并发送"/>
+
+
+    <me.smart.flyme.view.wiget.SwitchButton
+        android:layout_below="@id/btnSend"
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="right|center_vertical"
+        app:borderWidth2="1px"
+        app:offBorderColor="#dadbda"
+        app:offColor="#ffffff"
+        app:onColor="#4ebb7f"
+        app:spotColor="#ffffff"
+        app:animate="true"
+        android:id="@+id/view"/>
+
+    <ImageView
+        android:id="@+id/good2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/good"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>
